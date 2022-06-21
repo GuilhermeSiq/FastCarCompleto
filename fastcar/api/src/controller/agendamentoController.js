@@ -22,7 +22,7 @@ server.post('/agendartest', async (req,resp) => {
         const novoagendamento = req.body;
         
         if(!novoagendamento.cliente){
-            throw new Error('Nome do corno é obrigatório');
+            throw new Error('Nome do cliente é obrigatório');
         }
         if(!novoagendamento.carro){
             throw new Error('Nome do carro é obrigatório');
@@ -32,10 +32,10 @@ server.post('/agendartest', async (req,resp) => {
             throw new Error('Cor do carro é obrigatório');
         }
         if(!novoagendamento.cpf){
-            throw new Error('Cpf do corno é obrigatório');
+            throw new Error('Cpf do cliente é obrigatório');
         }
         if(!novoagendamento.telefone){
-            throw new Error('Telefone do corno é obrigatório');
+            throw new Error('Telefone do cliente é obrigatório');
         }
         if(!novoagendamento.atendimento){
             throw new Error('Data e hora é obrigatória');

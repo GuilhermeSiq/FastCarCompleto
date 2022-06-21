@@ -32,19 +32,19 @@ export default function Index(){
         setCPF(resposta.cpf);
         setTelefone(resposta.telefone);
         setAtendimento(resposta.atendimento.substr(0, 16));
-        setId(resposta.ID);
+        setId(resposta.id);
     }
 
 
     async function salvarClick(){
         try{      
-            if(ID === 0 ) {
+            if(id === 0 ) {
             const r = await cadastrarAgendamento(cliente,carro,cor,cpf,telefone,atendimento);
             setId(r.ID)
             toast.dark('agendamento concluido');
         }
         else {
-           await alterarAgendamento(ID, cliente, carro, cor, cpf, telefone, atendimento);
+           await alterarAgendamento(id, cliente, carro, cor, cpf, telefone, atendimento);
            toast.dark('agendamento alterado')
         }
     }
@@ -165,7 +165,7 @@ export default function Index(){
 
 
             <div className='div-botao'>
-                <button className='botao' onClick={salvarClick}> {ID === 0 ? 'SALVAR' : 'ALTERAR'}</button> 
+                <button className='botao' onClick={salvarClick}> {id === 0 ? 'SALVAR' : 'ALTERAR'}</button> 
             </div>
             <div className='div-botao'>
                 <button className='botao' onClick={novoClick}> NOVO</button> 
