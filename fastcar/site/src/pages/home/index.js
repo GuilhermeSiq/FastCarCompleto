@@ -81,8 +81,9 @@ export default function Index(){
                 </div>
                
                 
-                
-             
+                <div>
+        <h1 className='h1-mik1'></h1>
+        </div>
             </div>
             <div className='j1' id='bl'>
                 <img className='b-im' src='/images/Novo-Nissan-Kicks-Exclusive-13-source_edited.jpg' width='' alt=''/>
@@ -94,6 +95,9 @@ export default function Index(){
                     </a>
                     </center>
             </div>
+            <div>
+        <h1 className='h1-mik1'></h1>
+        </div>
             <div className='j1' id='bl'>
                 <img className='b-im' src='/images/2023-chevrolet-blazer-front-view.jpg' width='' alt=''/>
                 <center>

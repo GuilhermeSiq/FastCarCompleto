@@ -74,11 +74,7 @@
     height: 100px;
     margin: 0 0 0 -2400px;
     position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+    
 }
 .img{
     height: 800px;
@@ -93,9 +89,10 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #8181a034;
-    height: 109vh;
+    height: 31.3em;
     margin-left: 2.5em;
     border-radius: 30px;
+    margin-bottom: 8em;
 }
 
 #demo {
