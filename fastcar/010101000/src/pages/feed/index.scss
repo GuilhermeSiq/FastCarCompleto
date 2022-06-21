@@ -1,0 +1,325 @@
+.pagina-feed{
+    .Faixa-logo {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        height: 130px;
+    }
+    .carousel-container{
+        width: 100px;
+        height: 100px;
+        size: 100px;
+    }
+    *{
+        margin: 0vh;
+    }
+    .Imagem-Logo {
+        width: 220px;
+        height: 300px;
+        
+    }
+
+    #demo {
+        -webkit-box-shadow:5px 13px 27px 5px rgba(0, 0, 0, 0.397);
+        box-shadow: 5px 13px 27px 5px rgba(0, 0, 0, 0.616);
+        }
+    
+    
+    p {
+        font-size: 20px;
+    }
+
+    .Div-Imagem-Logo{
+        margin-top: -100px;
+    }
+    
+    .Nome-Marca {
+        margin-top: 35px;
+        margin-left: 25px;
+        font-size: 25px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    .SegundoNome-Carro{
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    
+    .Primeira-Fileira {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    
+    .Balao1{
+        margin-top: 35px;
+        margin-left: 50px;
+        border-radius: 20px;
+        border: 3px solid #000000;
+    }
+     .Balao1:hover{
+        transform: scale(1.1);
+        transition: all 0.2s;
+     }
+
+     .Balao2:hover{
+        transform: scale(1.1);
+        transition: all 0.2s;
+     }
+
+     .Balao3:hover{
+        transform: scale(1.1);
+        transition: all 0.2s;
+     }
+    
+    
+    .Div-Imagem-Carro {
+        width: 1;
+    }
+    
+    
+    .Imagem-Carro {
+        width: 335px;
+        height: 225px;
+        border-radius: 20px;
+        border: 3px solid #f5f6fa;
+    }
+    
+    
+    .Div-P {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .PrimeiroNome-Carro {
+        margin-right: 15px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+        
+    }
+    
+    
+    .DataKm {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .P-data {
+        margin-right: 100px;
+        margin-bottom: 35px;
+    }
+    
+    
+    .Div-Botao-Agendar {
+        display: flex;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    .Botao-agendar {
+        transition: all 0.5s ease-in ;
+        color: #fff;
+        padding: 7px 7px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        background-color: #4B4DF7;
+    }
+    
+    .edes img{
+        margin-top: -15em;
+    }
+    
+    .edes h1{
+        color: #4b4df7;
+        font-family: "fonte1";
+        margin-left: 1.9em;
+    }
+    
+    
+    
+    .Balao2{
+        margin-top: 35px;
+        margin-left: 50px;
+        border-radius: 20px;
+        border: 3px solid #4B4DF7;
+    }
+    
+    
+    .Div-Imagem-Carro2 {
+        width: 1;
+    }
+    
+    
+    .Imagem-Carro2 {
+        width: 335px;
+        height: 225px;
+        border-radius: 20px;
+        border: 3px solid #f5f6fa;;
+    }
+    
+    
+    .Div-P2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .PrimeiroNome-Carro2 {
+        margin-right: 15px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    .DataKm2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .P-data2 {
+        margin-right: 100px;
+        margin-bottom: 40px;
+    }
+    
+    
+    .Div-Botao-Agendar2 {
+        
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    }
+    
+    
+    
+    
+    
+    
+    .Balao3 {
+        margin-top: 35px;
+        margin-left: 50px;
+        border-radius: 20px;
+        border: 3px solid #4B4DF7;
+        margin-right: 70px;
+    }
+    
+    
+    .Div-Imagem-Carro3 {
+     width: 1;
+    }
+    
+    
+    .Imagem-Carro3 {
+        height: 225px;
+        width: 335px;
+        border-radius: 20px;
+        border: 3px solid #f5f6fa;
+    }
+    
+    
+    .Div-P3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .PrimeiroNome-Carro3 {
+        margin-right: 15px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: bold;
+    }
+    
+    
+    .DataKm3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .P-data3 {
+        margin-right: 100px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .Div-Botao-Agendar3 {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+    }
+    
+    
+    
+    
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        background-color: #000000;
+        height: 50vh;
+    }
+    
+    .de h1{
+        font-family: "fonte1";
+        color: #4b4df7;
+    }
+    
+    .edes{
+        margin-left: 46em;
+    }
+    
+    .edes img{
+        margin-top: -15em;
+    }
+    
+    .edes h1{
+        color: #4b4df7;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        margin-left: 1.9em;
+    }
+    
+    .ptele{
+        color: #4B4DF7;
+    }~
+    .tt{
+        font-size: 28px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    .lp-l{
+        color: #ff0000;
+    }
+}
+
+
+.gabe{
+    color: #ffff;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.degabe{
+    display: flex;
+    flex-direction: column;
+    margin: 4em 4em 4em 4em;
+}
+
+.querocome{
+    color: #4b4df7;
+}

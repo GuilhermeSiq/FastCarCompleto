@@ -1,0 +1,137 @@
+.pagina-login{
+    body{
+
+        margin: 0px;
+    }
+
+    
+    header{
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        height: 14vh;
+    }
+    
+    header img{
+        margin-top: -7.4em;
+        width: 300px;
+        height: 300px;
+        
+    
+    }
+
+    .kj{
+        color: rgb(0, 0, 0);
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        
+    }
+    
+    button{
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    
+    
+    .co-a{
+        border: solid 3px #4B4DF7;
+        height: 85vh;
+    }
+    
+    .co-b{
+        display: flex;
+        flex-direction: row;
+        height: 65%;
+    }
+    
+    .co-c{
+        display: flex;
+        justify-content: center;
+        background-color: #4B4DF7;
+        width: 110vh;
+        height: 85vh;
+    }
+    
+    .c{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 65vh;
+        margin: 75px;
+        height: 65vh;
+        border-radius: 5px;
+        justify-content: center;
+        
+    }
+    
+    .c input{
+        height: 30px;
+        border-radius: 5px;
+        border: solid 2px #4B4DF7;
+        width: 290px;
+        margin: 15px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+    .c h1{
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: #000000;
+        margin-top: -100px;
+    }
+    
+    .cl{
+        display: flex;
+        flex-direction: row;
+        margin-left: 34px;
+    }
+    
+
+    
+    .cm input{
+        font-size: 15px;
+        font-family: 'Kanit', sans-serif;
+        background-color: #4B4DF7;
+        color: #f5f6fa;
+        border-radius: 20px;
+        margin-top: 40px;
+    
+    }
+    
+    
+    .kj{
+        margin-top: 0px;
+        
+    }
+    
+    
+    
+    .co-d{
+        background-color: #ffffff ;
+        width: 150vh;
+        height: 10vh;
+    }
+    
+    .co-d{
+        margin-top: 0px;
+        width: 60vh ;
+    }
+
+
+
+    .imgl {
+        width: 500px;
+        height: 90%;
+        margin-top: 120px;
+    }
+
+
+
+    .ol {
+        margin-top: 30px;
+        background-color: #4B4DF7;
+        border: 1px solid #4B4DF7;
+        padding: 5px 30px;
+        border-radius: 20px;
+        color: white;
+    }
+
+}
