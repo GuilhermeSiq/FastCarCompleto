@@ -1,6 +1,18 @@
 *{text-decoration: none;}
 
 .pagina-home{
+
+/* main{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+} */
+
+section{
+    width: 100%;
+    height: 100%;
+}
+    
 .faixa1{
     display: flex;
     flex-direction: row;
@@ -152,6 +164,10 @@
     height: 80vh;
     padding-top: 2em;
 }
+#f4:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+ }
 .f4-texto{
     padding: 20px;
     font-family: "fonte1";
@@ -170,6 +186,10 @@
 .od img{
     width: 100%;
 }
+#od:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+ }
 
 .ciculo{
     display: flex;
@@ -177,6 +197,11 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+#ciculo:hover{
+    transform: scale(1.1);
+    transition: all 0.2s;
+ }
 
 .mik1 {
     display: flex;
@@ -201,13 +226,13 @@
     justify-content: space-around;
 }
 #bloco {
-    width: 342px;
+    width: 300px;
     height: 408px;
     background-color: #f5f6fa;
     border-radius: 12px;
     border: solid 2px blue;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 40px;
     box-shadow: 5px 3px 3px #f5f6fa;
 }
 
@@ -248,7 +273,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     background-color: #000000;
-    height: 40vh;
+    height: 100%;
 }
 
 .de{
@@ -339,6 +364,7 @@ footer{
 
 @media screen and (max-width:560px){
 
+
     .faixa1{
         width: 100%;
     }
@@ -359,6 +385,43 @@ footer{
 }
 .j1 p{
     font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+
+
+@media(max-width:1024px){
+    
+    width: 100vw;   
+
+    .img{
+        width: 100vw;
+        height: 30rem;
+    }
+
+    .slide-f{
+        height: 800px;
+        width: 1px !important;
+       
+    }
+
+    .sobre{
+        margin-left: 4px;
+        width: 1000px;
+    }
+
+    .sobre img{
+        width: 480px;
+    }
+
+    .mik1{
+        width: 900px;
+    }
+
+    .j1{
+      
+        
+    }
+    
 }
 
 }

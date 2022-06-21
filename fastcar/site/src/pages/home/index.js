@@ -1,26 +1,25 @@
-import './index.scss';
+    import './index.scss';
 
 export default function Index(){
 
     return (
-        <div className='pagina-home'>
+    <main className='pagina-home'>
         <div className='faixa1'>
-                <img className='logo' src='/images/1650664822990.png' alt=''  />
-                <div className='botp'>
+            <img className='logo' src='/images/1650664822990.png' alt=''  />
+            <div className='botp'>
                 <a className='io' href='/feed'>Veículos
                 </a>
-                <a className='io' href='/login'> Login
+                    <a className='io' href='/login'> Login
                 </a>
-                </div>
-            
+            </div>
         </div>
 
 
 
 <div className='slide-f'>
 
-    <div className='img'>
-        <img src='/images/foto6.jpg' alt='' width=''/>
+    <div>
+        <img src='/images/foto6.jpg'  className='img' alt='' width=''/>
     </div>
 
 
@@ -61,9 +60,7 @@ export default function Index(){
 
 <section className='mik1'>
     <div className='container-mik1'>
-        <div>
-        <h1 className='h1-mik1'>CARROS POPULARES</h1>
-        </div>
+        
         <div className='subcontainer-mik1'/>
             <div className='j1' id='bl'>
                 <img className='b-im' src='/images/Fiat-Toro-Ultra_1.jpg' width='' alt=''/>
@@ -79,12 +76,13 @@ export default function Index(){
                 </a>
                 </center>
                 </div>
-               
-                
-                <div>
+            
+             </div>   
+
+        <div>
         <h1 className='h1-mik1'></h1>
         </div>
-            </div>
+           
             <div className='j1' id='bl'>
                 <img className='b-im' src='/images/Novo-Nissan-Kicks-Exclusive-13-source_edited.jpg' width='' alt=''/>
                 <center>
@@ -95,7 +93,7 @@ export default function Index(){
                     </a>
                     </center>
             </div>
-            <div>
+        <div>
         <h1 className='h1-mik1'></h1>
         </div>
             <div className='j1' id='bl'>
@@ -108,7 +106,7 @@ export default function Index(){
                     </a>
                     </center>
                 
-            </div>
+        </div>
 </section>
 
 <section className='mik1'>
@@ -133,7 +131,7 @@ export default function Index(){
                     preços se encontram aqui.'  </p>
             </div>
         </div>
-        </div>
+    </div>
 </section>
 
 <footer>
@@ -154,6 +152,6 @@ export default function Index(){
     </div>
 
 </footer>
-        </div>
+        </main>
     )
 }
