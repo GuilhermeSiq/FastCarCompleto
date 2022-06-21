@@ -21,23 +21,23 @@ server.post('/agendartest', async (req,resp) => {
     try{
         const novoagendamento = req.body;
         
-        if(!novoagendamento.cliente){
+        if(!novoagendamento.cliente.trim()){
             throw new Error('Nome do cliente é obrigatório');
         }
-        if(!novoagendamento.carro){
+        if(!novoagendamento.carro.trim()){
             throw new Error('Nome do carro é obrigatório');
         }
         
-        if(!novoagendamento.cor){
+        if(!novoagendamento.cor.trim()){
             throw new Error('Cor do carro é obrigatório');
         }
-        if(!novoagendamento.cpf){
+        if(!novoagendamento.cpf.trim()){
             throw new Error('Cpf do cliente é obrigatório');
         }
-        if(!novoagendamento.telefone){
+        if(!novoagendamento.telefone.trim()){
             throw new Error('Telefone do cliente é obrigatório');
         }
-        if(!novoagendamento.atendimento){
+        if(!novoagendamento.atendimento.trim()){
             throw new Error('Data e hora é obrigatória');
         }
         const agend = await AgendamentoTestedrive(novoagendamento);
@@ -114,6 +114,24 @@ server.put ('/agendamento/:id', async (req,resp) => {
         const resposta = await alteraAgendamento(id, agend);
         if (resposta != 1)
             throw new Error('agendamento não pode ser alterado');
+        if(!agend.cliente.trim()){
+                throw new Error('Nome do cliente é obrigatório');
+            }
+        if(!agend.carro.trim()){
+                throw new Error('Nome do carro é obrigatório');
+            }
+        if(!agend.cor.trim()){
+                throw new Error('Cor do carro é obrigatório');
+            }
+        if(!agend.cpf.trim()){
+                throw new Error('Cpf do cliente é obrigatório');
+            }
+        if(!agend.telefone.trim()){
+                throw new Error('Telefone do cliente é obrigatório');
+            }
+        if(!agend.atendimento.trim()){
+                throw new Error('Data e hora é obrigatória');
+            }
         else
             resp.status(204).send();
         

@@ -1,7 +1,8 @@
 import './index.scss';
-import axios from 'axios'
-import { useState } from 'react'
+import { login } from '../../api/funcionarioApi'
+import { useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom'
+import storage from 'local-storage'
 
 export default function Index(){
     const [email, setEmail] = useState('');
@@ -10,23 +11,35 @@ export default function Index(){
 
     const navigate = useNavigate()
 
+
+    useEffect(() => {
+        if (storage('usuario-logado')) {
+            navigate('/tabela');
+        }
+    }, [])    
+
     async function entrarClick(){
     try{    
-    const r = await axios.post('http://localhost:5000/funcionario', {
-        email: email,
-        senha: senha
-    });
-
-    navigate('/tabela');
-    
-
-    } 
+        const r = await login(email, senha);
+        storage('usuario-logado', r)
+        navigate('/tabela');
+    }
+     
     catch(err){
         if(err.response.status == 401){
             setErro(err.response.data.erro)
         }
-
     }
+    }
+
+    async function voltarClick(){
+        try {
+            navigate('/home')
+        } catch (err) {
+            if(err.response.status == 401){
+                setErro(err.response.data.erro)
+            }
+        }
     }
 
     return(
@@ -59,6 +72,9 @@ export default function Index(){
 
                             <div className='cm'>
                                 <button className='ol' onClick={entrarClick}>Entrar</button>                            
+                            </div>
+                            <div className='cm'>
+                                <button className='ol' onClick={voltarClick}>Voltar</button>                            
                             </div>
 
                             <div className='kj'>

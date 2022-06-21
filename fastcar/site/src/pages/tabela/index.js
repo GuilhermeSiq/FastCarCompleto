@@ -4,6 +4,7 @@ import { BuscarAgendamentoPorNome, deletarAgendamento, listaagendamentos, altera
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom';
+import storage from 'local-storage'
 
 
 export default function Index() {
@@ -16,6 +17,21 @@ export default function Index() {
     function editarAgendamento(id){
         navigate(`/alterar/${id}`)
     }
+
+    function sairClick() {
+        storage.remove('usuario-logado');
+        navigate('/login')
+    }
+
+    function inicial(){
+
+    }
+
+    useEffect(() => {
+        if (!storage('usuario-logado')) {
+            navigate('/login')
+        }
+    }, [])
 
     async function filtrar(){
         const resp = await BuscarAgendamentoPorNome(filtro);
@@ -73,6 +89,9 @@ export default function Index() {
                         </div>
                         <div className="Div-Botao-Agendar2">
                             <a className="Botao-agendar" href="/agendamento">AGENDAR</a>
+                        </div>
+                        <div className='Div-Botao-Agendar2'>
+                        <div className="Botao-agendar" href="/agendamento" onClick={sairClick} >SAIR</div>
                         </div>
                     </div>
 
